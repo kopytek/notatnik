@@ -1,4 +1,6 @@
 Notatnik::Application.routes.draw do
+  get "cos/say"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
