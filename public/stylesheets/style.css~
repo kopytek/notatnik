@@ -183,7 +183,7 @@ h1:hover {
     cursor: pointer;
     }
 p {
-    font-size: 2.2em;
+    font-size: 2em;
         text-shadow: 1px 2px 2px rgba(0,0,0,.1);
         text-transform: uppercase;
 }
