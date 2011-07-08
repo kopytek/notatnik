@@ -4,6 +4,7 @@ Notatnik::Application.routes.draw do
 
 
   root :to => 'cos#say'
+  match '/sha' => 'cos#say'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
