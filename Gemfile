@@ -10,6 +10,10 @@ gem 'haml'
 gem 'css3buttons'
 gem 'devise'
 gem 'formtastic', '~> 1.2.3'
+
+group :development, :test do
+    gem 'annotate'
+end
 # Use unicorn as the web server
 # gem 'unicorn'
 

@@ -1,10 +1,8 @@
 Notatnik::Application.routes.draw do
-  get "cos/say"
-
-
 
   root :to => 'cos#say'
   match '/sha' => 'cos#say'
+  match '/signup' => 'users#new'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
