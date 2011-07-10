@@ -11,7 +11,7 @@ class UsersController < ApplicationController
    if params[:name]
      @user = User.find_by_name(params[:name])
    end
-     
+      @user = User.find(params[:id])
     
   end
 end

@@ -1,0 +1,5 @@
+%h1 Tu zobaczymy usera
+%p 
+  &hearts; |
+  ="#{@user.name} , #{@user.email}"
+  =button_link_to 'Home', root_path

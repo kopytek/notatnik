@@ -3,7 +3,3 @@
 
 en:
   hello: "Hello world"
-  formtastic:
-    labels:
-      users:
-        title: "aaaaaaaa"

@@ -1,8 +1,16 @@
 Notatnik::Application.routes.draw do
 
+  resources :users
+
   root :to => 'cos#say'
   match '/sha' => 'cos#say'
   match '/signup' => 'users#new'
+  match '/:name' => 'users#show', :as => 'user_name', 
+    :constraints => { :name => /\d*[a-zA-Z]+\d*/ }
+  match '/:id' => 'users#show', :as => 'user_id',
+    :constraints => { :id => /\d+/ }
+                                    
+                         
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
