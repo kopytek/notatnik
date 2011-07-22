@@ -4,6 +4,7 @@ Notatnik::Application.routes.draw do
 
   root :to => 'cos#say'
   match '/sha' => 'cos#say'
+  match '/test' => 'cos#test'
   match '/signup' => 'users#new'
   match '/:name' => 'users#show', :as => 'user_name', 
     :constraints => { :name => /\d*[a-zA-Z]+\d*/ }

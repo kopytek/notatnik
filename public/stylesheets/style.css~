@@ -58,7 +58,7 @@ hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin:
  * Font normalization inspired by YUI Library's fonts.css: developer.yahoo.com/yui/
  */
 
-body { font:13px/1.231 sans-serif; *font-size:small; } /* Hack retained to preserve specificity */
+body { font:16px/1.231 sans-serif; *font-size:small; } /* Hack retained to preserve specificity */
 
 /* Normalize monospace sizing:
    en.wikipedia.org/wiki/MediaWiki_talk:Common.css/Archive_11#Teletype_style_fix_for_Chrome */
@@ -165,8 +165,11 @@ h1, h2, h3, h4, h5, h6 { font-weight: normal; }
     padding: 10px;
 }
 body {
+    /*
     color: white;
     background: #DEDDD8;
+    */
+    background: #fff;
 }
 h1 {
     font-size: 108px;
@@ -197,7 +200,7 @@ section.form_signup {
 }
 
 hr {
-    border-color: #ECEDF3;
+    border-color: #ccc;
     //margin-left: 0;
     clear: both;
 }
@@ -216,25 +219,90 @@ h4 {
     margin-bottom: 1em;
 }
 input[type="text"] {
-    color: #888;
-    font-size: 24px;
+    color: #444;
+    font-size: 16px;
     border: none;
-    border: 1px rgba( #444, 1);  
-    width: 300px;
-    height: 24px;
-    line-height: 24px;
-    padding: 10px 8px;
+   /* width: 240px; */
+    height: 16px;
+    line-height: 16px;
+   /* padding: 10px 8px; */
 }
 .form_element {
     margin-bottom: 1.4em;
 }
         
+article.entry {
+    position: relative;
+    border: 1px solid #ccc;
+    /* full width */
+    width: 560px;
+    padding: 12px 8px;
+    /* only title visible with that height */
+    height: 32px;
+    /* height: auto; */
+    -webkit-box-shadow: 0 0 4px rgba(0,0,0,.15);
+    }
+article.entry > input[type="text"].title {
+    
+    //border: 1px solid #ccc;
+    background: #F4F4F4;
+    //background: #f3f0eb;
+    color: #aaaaa6;
+        font-size: 14px;
 
+    width: 542px;
+    padding: 8px 6px;
+    margin-bottom: 1em;
+}
+article.entry > input[type="text"].title:focus {
+    outline: none;
+    background: #2F2F2F;
+    color: #eee;
+    
 
-
-
-
-
+}
+article.entry > div.content {
+    color: #aaaaa6;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    background: #F4F4F4;
+    width: 542px;
+    padding: 8px 6px;
+    height: 96px;
+    whitespace: pre;
+    margin-bottom: 1em;
+    //visibility: hidden;
+}
+article.entry > div.content:focus {
+    outline: none;
+    background: #2F2F2F;
+    color: #eee;
+}
+article.entry > input[type="submit"] {
+    float: right;
+    margin-right: 6px;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    width: 62px;
+    height: 30px;
+    background: #fff;
+    //background: #2F2F2F;
+    //color: #deddd8;
+    color: rgba (#2f2f2f, .8);
+    font-size: 14px;
+    text-align: center;
+    //text-transform: uppercase;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: 0 0 4px rgba(0,0,0,.15);
+    border-radius: 2px;
+}
+article.entry > input[type="submit"]:hover {
+    //background: #64B6B1;
+    //opacity: .1;
+   
+}
 
 
 

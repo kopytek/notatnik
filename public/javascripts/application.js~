@@ -6,7 +6,7 @@ $(document).ready(function () {
     
     $('input[type="text"].title').focus(function () {
        // $('article.entry').css('height', 'auto');
-        $('article.entry').animate({height:'200px'}, 300);
+        $('article.entry').animate({height:'190px'}, 300);
         $('div.content').css('visibility','visible');
         $('input[type="submit"]').css('visibility','visible');
     });
