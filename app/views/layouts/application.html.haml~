@@ -20,7 +20,7 @@
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
     / Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons
     / CSS: implied media="all"
-    = stylesheet_link_tag "style", "application", "formtastic", "formtastic_changes", :media => "all", :cache => "styles"
+    = stylesheet_link_tag "application", "formtastic", "formtastic_changes", "style", :media => "all", :cache => "styles"
     = css3buttons_stylesheets :include_reset => false
     / More ideas for your <head> here: h5bp.com/docs/#head-Tips
     /

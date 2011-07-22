@@ -146,7 +146,7 @@ body, select, input, textarea {
 }
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
-/* h1, h2, h3, h4, h5, h6 { font-weight: bold; } */
+h1, h2, h3, h4, h5, h6 { font-weight: normal; } 
 
 /* These selection declarations have to be separate
    No text-shadow: twitter.com/miketaylr/status/12228805301
@@ -172,7 +172,7 @@ h1 {
     font-size: 108px;
     letter-spacing: -3px; /* without typekit */
     /* letter-spacing: -2px; with typekit */
-    text-shadow: 2px -2px 6px rgba(0,0,0,.3);
+    text-shadow: 2px -1px 6px rgba(0,0,0,.3);
     /* text-shadow: 1px 0px 2px rgba(0,0,0,.15); */
     font-weight: bold;
     /* font-weight: normal; */
@@ -191,8 +191,44 @@ p {
         text-transform: uppercase;
 }
 
+section.form_signup {
+
+    margin-left: 300px;
+}
+
+hr {
+    border-color: #ECEDF3;
+    //margin-left: 0;
+    clear: both;
+}
 
 
+/* inputs */
+h3 {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 6px;
+ //   margin-bottom: 1em;
+
+}
+h4 {
+    font-size: 24px;
+    margin-bottom: 1em;
+}
+input[type="text"] {
+    color: #888;
+    font-size: 24px;
+    border: none;
+    border: 1px rgba( #444, 1);  
+    width: 300px;
+    height: 24px;
+    line-height: 24px;
+    padding: 10px 8px;
+}
+.form_element {
+    margin-bottom: 1.4em;
+}
+        
 
 
 
