@@ -252,7 +252,7 @@ article.entry > input[type="text"].title {
         font-size: 14px;
 
     width: 542px;
-    padding: 8px 6px;
+    padding: 8px 8px;
     margin-bottom: 1em;
 }
 article.entry > input[type="text"].title:focus {
@@ -269,7 +269,7 @@ article.entry > div.content {
     font-size: 14px;
     background: #F4F4F4;
     width: 542px;
-    padding: 8px 6px;
+    padding: 8px 8px;
     height: 96px;
     whitespace: pre;
     margin-bottom: 1em;
@@ -300,7 +300,8 @@ article.entry > input[type="submit"] {
     border-radius: 2px;
 }
 article.entry > input[type="submit"]:hover {
-    //background: #64B6B1;
+    background: #deddd8;
+    color: #2F2F2F;
     //opacity: .1;
    
 }
