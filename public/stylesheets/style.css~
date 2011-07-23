@@ -240,7 +240,12 @@ article.entry {
     /* only title visible with that height */
     height: 32px;
     /* height: auto; */
+    
     -webkit-box-shadow: 0 0 4px rgba(0,0,0,.15);
+    -moz-box-shadow: 0 0 4px rgba(0,0,0,.15);
+    box-shadow: 0 0 4px rgba(0,0,0,.15);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
     border-radius: 2px;
     }
 article.entry > input[type="text"].title {
@@ -296,8 +301,16 @@ article.entry > input[type="submit"] {
     text-align: center;
     //text-transform: uppercase;
     border: 1px solid #ccc;
+    
     -webkit-box-shadow: 0 0 4px rgba(0,0,0,.15);
+    -moz-box-shadow: 0 0 4px rgba(0,0,0,.15);
+    box-shadow: 0 0 4px rgba(0,0,0,.15);
+    
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
     border-radius: 2px;
+    
+    visibility: hidden;
 }
 article.entry > input[type="submit"]:hover {
     background: #deddd8;
