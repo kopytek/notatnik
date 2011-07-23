@@ -252,7 +252,7 @@ article.entry > input[type="text"].title {
         font-size: 14px;
 
     width: 542px;
-    padding: 8px 6px;
+    padding: 8px 8px;
     margin-bottom: 1em;
 }
 article.entry > input[type="text"].title:focus {
@@ -273,7 +273,7 @@ article.entry > div.content {
     height: 96px;
     whitespace: pre;
     margin-bottom: 1em;
-    //visibility: hidden;
+    visibility: hidden;
 }
 article.entry > div.content:focus {
     outline: none;

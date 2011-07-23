@@ -273,7 +273,7 @@ article.entry > div.content {
     height: 96px;
     whitespace: pre;
     margin-bottom: 1em;
-    //visibility: hidden;
+    visibility: hidden;
 }
 article.entry > div.content:focus {
     outline: none;
@@ -298,6 +298,7 @@ article.entry > input[type="submit"] {
     border: 1px solid #ccc;
     -webkit-box-shadow: 0 0 4px rgba(0,0,0,.15);
     border-radius: 2px;
+    visibility: hidden;
 }
 article.entry > input[type="submit"]:hover {
     background: #deddd8;
