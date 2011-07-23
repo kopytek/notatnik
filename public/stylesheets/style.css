@@ -58,7 +58,7 @@ hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin:
  * Font normalization inspired by YUI Library's fonts.css: developer.yahoo.com/yui/
  */
 
-body { font:13px/1.231 sans-serif; *font-size:small; } /* Hack retained to preserve specificity */
+body { font:16px/1.231 sans-serif; *font-size:small; } /* Hack retained to preserve specificity */
 
 /* Normalize monospace sizing:
    en.wikipedia.org/wiki/MediaWiki_talk:Common.css/Archive_11#Teletype_style_fix_for_Chrome */
@@ -146,7 +146,7 @@ body, select, input, textarea {
 }
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
-/* h1, h2, h3, h4, h5, h6 { font-weight: bold; } */
+h1, h2, h3, h4, h5, h6 { font-weight: normal; } 
 
 /* These selection declarations have to be separate
    No text-shadow: twitter.com/miketaylr/status/12228805301
@@ -165,8 +165,11 @@ body, select, input, textarea {
     padding: 10px;
 }
 body {
+    /*
     color: white;
     background: #DEDDD8;
+    */
+    background: #fff;
 }
 h1 {
     font-size: 108px;
@@ -191,14 +194,117 @@ p {
         text-transform: uppercase;
 }
 
+section.form_signup {
+
+    margin-left: 300px;
+}
+
+hr {
+    border-color: #ccc;
+    //margin-left: 0;
+    clear: both;
+}
 
 
+/* inputs */
+h3 {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 6px;
+ //   margin-bottom: 1em;
 
+}
+h4 {
+    font-size: 24px;
+    margin-bottom: 1em;
+}
+input[type="text"] {
+    color: #444;
+    font-size: 16px;
+    border: none;
+   /* width: 240px; */
+    height: 16px;
+    line-height: 16px;
+   /* padding: 10px 8px; */
+}
+.form_element {
+    margin-bottom: 1.4em;
+}
+        
+article.entry {
+    position: relative;
+    border: 1px solid #ccc;
+    /* full width */
+    width: 560px;
+    padding: 12px 8px;
+    /* only title visible with that height */
+    height: 32px;
+    /* height: auto; */
+    -webkit-box-shadow: 0 0 4px rgba(0,0,0,.15);
+    border-radius: 2px;
+    }
+article.entry > input[type="text"].title {
+    
+    //border: 1px solid #ccc;
+    background: #F4F4F4;
+    //background: #f3f0eb;
+    color: #aaaaa6;
+        font-size: 14px;
 
+    width: 542px;
+    padding: 8px 8px;
+    margin-bottom: 1em;
+}
+article.entry > input[type="text"].title:focus {
+    outline: none;
+    background: #2F2F2F;
+    color: #eee;
+    
 
-
-
-
+}
+article.entry > div.content {
+    color: #aaaaa6;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    background: #F4F4F4;
+    width: 542px;
+    padding: 8px 8px;
+    height: 96px;
+    whitespace: pre;
+    margin-bottom: 1em;
+    //visibility: hidden;
+}
+article.entry > div.content:focus {
+    outline: none;
+    background: #2F2F2F;
+    color: #eee;
+}
+article.entry > input[type="submit"] {
+    float: right;
+    margin-right: 6px;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    width: 62px;
+    height: 30px;
+    background: #fff;
+    //background: #2F2F2F;
+    //color: #deddd8;
+    color: rgba (#2f2f2f, .8);
+    font-size: 14px;
+    text-align: center;
+    //text-transform: uppercase;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: 0 0 4px rgba(0,0,0,.15);
+    border-radius: 2px;
+}
+article.entry > input[type="submit"]:hover {
+    background: #deddd8;
+    color: #2F2F2F;
+    //opacity: .1;
+   
+}
 
 
 

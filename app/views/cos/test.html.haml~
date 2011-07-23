@@ -1,0 +1,7 @@
+%article.entry
+  =text_field_tag('title','', :placeholder => 'podaj tytuł dla wpisu',
+                    :class => 'title')
+  .editable{:contenteditable => 'plaintext-only', :class => 'content'}
+  =input_f
+
+
