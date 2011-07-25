@@ -10,11 +10,7 @@ gem 'haml'
 gem 'css3buttons'
 #gem 'devise'
 gem 'formtastic', '~> 1.2.3'
-<<<<<<< master
-gem 'bcrypt-ruby', '~> 2.1.4'
-=======
-gem "bcrypt-ruby", "~> 2.1.4"
->>>>>>> local
+
 group :development, :test do
     gem 'annotate'
 end

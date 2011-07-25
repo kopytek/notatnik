@@ -30,6 +30,7 @@ GEM
     activesupport (3.0.9)
     annotate (2.4.0)
     arel (2.0.10)
+    bcrypt-ruby (2.1.4)
     builder (2.1.2)
     css3buttons (0.9.5)
       actionpack (>= 3.0.0)
@@ -80,6 +81,7 @@ PLATFORMS
 
 DEPENDENCIES
   annotate
+  bcrypt-ruby (~> 2.1.4)
   css3buttons
   formtastic (~> 1.2.3)
   haml
