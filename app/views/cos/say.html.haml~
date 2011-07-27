@@ -1,7 +1,15 @@
 %h1 NoteIt
-%p Some text, Hello World |
-  more and more and more |
+%p 
+  Some text, Hello World  |
+  more and more and more  |
   Sign up to start using noteit today |
 =big_button_link_to 'Home', root_path
 =big_button_link_to 'User', user_name_path('piotrek')
 =big_button_link_to 'User', user_id_path(1)
+=big_button_link_to 'Sign up', signup_path
+%div.outside#content
+  %div.inside
+    Content of inside. 
+    %span> Content of span  
+    %abbr{:title => "Agencja Bezpieczeństwa Wewnętrznego"}<ABW
+    %p= '<strong>'
