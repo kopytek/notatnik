@@ -5,10 +5,11 @@ class UsersController < ApplicationController
   end
   
   def show
+    
     if params[:id]
       @user = User.find_by_id(params[:id])
-    end
-   if params[:name]
+    else
+    params[:name]
      @user = User.find_by_name(params[:name])
    end
      

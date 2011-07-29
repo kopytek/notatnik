@@ -7,8 +7,8 @@ gem 'rails', '3.0.9'
 
 gem 'sqlite3'
 gem 'haml'
+gem 'haml-rails'
 gem 'css3buttons'
-#gem 'devise'
 gem 'formtastic', '~> 1.2.3'
 gem "bcrypt-ruby", "~> 2.1.4"
 group :development, :test do
